@@ -702,7 +702,7 @@ elif pagina == "🚦 Monitoramento de Limites":
                 "Limite de VaR":     "R$ {:,.0f}",
                 "Utilização (%)":    "{:.1f}%",
             })
-            .applymap(colorir_status, subset=["Status"]),
+            .map(colorir_status, subset=["Status"]),
         use_container_width=True,
         hide_index=True,
     )
